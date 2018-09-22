@@ -9,16 +9,18 @@
 /* Begin PBXBuildFile section */
 		C9456F9A21568CC2005F5E5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9456F9921568CC2005F5E5C /* AppDelegate.swift */; };
 		C9456F9C21568CC2005F5E5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9456F9B21568CC2005F5E5C /* ViewController.swift */; };
-		C9456F9F21568CC2005F5E5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9456F9D21568CC2005F5E5C /* Main.storyboard */; };
 		C9456FA121568CC3005F5E5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9456FA021568CC3005F5E5C /* Assets.xcassets */; };
 		C9456FA421568CC3005F5E5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9456FA221568CC3005F5E5C /* LaunchScreen.storyboard */; };
+		F0914A3745E2EBD235E49A70 /* Pods_MultilineLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F91B3C4DDD0DC06741D7BC0 /* Pods_MultilineLabel.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F91B3C4DDD0DC06741D7BC0 /* Pods_MultilineLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultilineLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55E86D75D9CE68570C3C7CE9 /* Pods-MultilineLabel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultilineLabel.release.xcconfig"; path = "Pods/Target Support Files/Pods-MultilineLabel/Pods-MultilineLabel.release.xcconfig"; sourceTree = "<group>"; };
+		C5DE0FAE4527067AFCC11FA9 /* Pods-MultilineLabel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultilineLabel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MultilineLabel/Pods-MultilineLabel.debug.xcconfig"; sourceTree = "<group>"; };
 		C9456F9621568CC2005F5E5C /* MultilineLabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultilineLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9456F9921568CC2005F5E5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9456F9B21568CC2005F5E5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C9456F9E21568CC2005F5E5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9456FA021568CC3005F5E5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9456FA321568CC3005F5E5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9456FA521568CC3005F5E5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -29,17 +31,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0914A3745E2EBD235E49A70 /* Pods_MultilineLabel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21B1CD3EA43AC4A177B68CB0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5DE0FAE4527067AFCC11FA9 /* Pods-MultilineLabel.debug.xcconfig */,
+				55E86D75D9CE68570C3C7CE9 /* Pods-MultilineLabel.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4F5B39D187CEE7ADC7F9DDEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F91B3C4DDD0DC06741D7BC0 /* Pods_MultilineLabel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C9456F8D21568CC2005F5E5C = {
 			isa = PBXGroup;
 			children = (
 				C9456F9821568CC2005F5E5C /* MultilineLabel */,
 				C9456F9721568CC2005F5E5C /* Products */,
+				21B1CD3EA43AC4A177B68CB0 /* Pods */,
+				4F5B39D187CEE7ADC7F9DDEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,7 +78,6 @@
 			children = (
 				C9456F9921568CC2005F5E5C /* AppDelegate.swift */,
 				C9456F9B21568CC2005F5E5C /* ViewController.swift */,
-				C9456F9D21568CC2005F5E5C /* Main.storyboard */,
 				C9456FA021568CC3005F5E5C /* Assets.xcassets */,
 				C9456FA221568CC3005F5E5C /* LaunchScreen.storyboard */,
 				C9456FA521568CC3005F5E5C /* Info.plist */,
@@ -71,9 +92,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9456FA821568CC3005F5E5C /* Build configuration list for PBXNativeTarget "MultilineLabel" */;
 			buildPhases = (
+				108AFD356A4EDEBEABD7C6E4 /* [CP] Check Pods Manifest.lock */,
 				C9456F9221568CC2005F5E5C /* Sources */,
 				C9456F9321568CC2005F5E5C /* Frameworks */,
 				C9456F9421568CC2005F5E5C /* Resources */,
+				6D88BEC8E71BE9DDCBADF5D9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,11 +147,49 @@
 			files = (
 				C9456FA421568CC3005F5E5C /* LaunchScreen.storyboard in Resources */,
 				C9456FA121568CC3005F5E5C /* Assets.xcassets in Resources */,
-				C9456F9F21568CC2005F5E5C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		108AFD356A4EDEBEABD7C6E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MultilineLabel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D88BEC8E71BE9DDCBADF5D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MultilineLabel/Pods-MultilineLabel-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TinyConstraints/TinyConstraints.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TinyConstraints.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MultilineLabel/Pods-MultilineLabel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C9456F9221568CC2005F5E5C /* Sources */ = {
@@ -143,14 +204,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C9456F9D21568CC2005F5E5C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9456F9E21568CC2005F5E5C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C9456FA221568CC3005F5E5C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,15 +333,13 @@
 		};
 		C9456FA921568CC3005F5E5C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5DE0FAE4527067AFCC11FA9 /* Pods-MultilineLabel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R252PR8AVU;
 				INFOPLIST_FILE = MultilineLabel/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Rebeloper.MultilineLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -298,15 +349,13 @@
 		};
 		C9456FAA21568CC3005F5E5C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55E86D75D9CE68570C3C7CE9 /* Pods-MultilineLabel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R252PR8AVU;
 				INFOPLIST_FILE = MultilineLabel/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Rebeloper.MultilineLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
